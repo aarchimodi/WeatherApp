@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- <link> element used to include an external stylesheet(style.css) in a web page. -->
+    <!-- rel attribute specifies the relationship between the current document and the linked resource -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- within this div we need to create one search box -->
+        <div class="search">
+             <!-- within this search we need to create one input box and search button -->
+             <!-- When you set spellcheck to false, it instructs the browser not to underline potentially misspelled words or provide suggestions for corrections as the user types within that specific element. -->
+             <!-- basically it disables the browser's built-in spell-checking feature  -->
+             <input type="text" placeholder="Enter City Name" spellcheck="false">
+             <button><img src="/images/search.png"></button>
+        </div>
+
+        <!-- if user enters wrong city name -->
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+
+        <!-- to display the weather detail of any city -->
+        <div class="weather">
+            <img src="/images/rain.png" class="weather-icon">
+
+            <!-- temperature in h1 tag -->
+            <h1 class="temp">22°c</h1>
+
+            <!-- city name in h2 tag -->
+            <h2 class="city">Mumbai</h2>
+
+            <div class="details">
+                <!-- in this details we need 2 columns for humidity and wind -->
+                <div class="col">
+                    <img src="/images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="/images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+        </div>
+    </div>
+
+
+<!-- adding external js file -->
+    <script src="script.js">
+    </script>
+    
+</body>
+</html>
